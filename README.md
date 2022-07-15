@@ -11,9 +11,9 @@ a basic one, which is what we are gonna aim for.
 
 Before we begin it is important to point some things!
 <ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
+    <li>FORTRAN requires a compiler to run, for which you need to install the so called compiler on your computer OR you can use an online compiler like [ONLINEDGB](https://www.onlinegdb.com/online_fortran_compiler)   </li>
+    <li>  1</li>
+    <li>  2</li>
+    <li>  3</li>
 </ul>
- 
+
