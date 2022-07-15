@@ -79,6 +79,6 @@ I believe the names are self explanatory, but in order to give you more document
 
 FORTRAN has an implicit way to work with variables, if the variable name starts with a
 letter between <i>i</i> and <i>n</i>, the variable will be considered an integer variable, in any other case it'll be considered a real variable unless it's defined as another type of variable.
-It is possible to make it so you have to define every single variable, by writing a statement called <i> IMPLICIT NONE</i> right after the <i>PROGRAM</i> statement. As per usual, [here](https://docs.oracle.com/cd/E19957-01/805-4939/6j4m0vn9v/index.html) you van find more documentation on the topic. I prefer to work in the implicit way so I don't have to worry to define every single variable, but you can do as you see more fit!
+It is possible to make it so you have to define every single variable, by writing a statement called <i> IMPLICIT NONE</i> right after the <i>PROGRAM</i> statement. As per usual, [here](https://docs.oracle.com/cd/E19957-01/805-4939/6j4m0vn9v/index.html) you can find more documentation on the topic. I prefer to work in the implicit way so I don't have to worry to define every single variable, but you can do as you see more fit!
 
 
