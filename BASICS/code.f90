@@ -1,7 +1,6 @@
-      PROGRAM LearningFORTRAN    
-      IMPLICIT REAL*8(A-H,O-Z)
+      PROGRAM BASICS 
+      a=10.0D0
+      i=1
+      print*, a,i
 
-      a=10.0
-      print*, 'you can also print a variable value:',a
-      print*, 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
       END PROGRAM
