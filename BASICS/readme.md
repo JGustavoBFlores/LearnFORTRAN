@@ -23,10 +23,18 @@ Coding is writing a set of steps for the computer to follows, this steps are cal
 Once inside our FORTRAN code file, we will refer to this file as source code from now on,
 the first thing we must write is the PROGRAM and the END PROGRAM statements:
 
-{% raw %}
 ```fortran
 PROGRAM mycodesname 
 END PROGRAM
 ```
-{% endraw %}
+
+In between this two statements you will write what your code does, let me show you a famous example:
+
+```fortran
+PROGRAM helloworld
+IMPLICIT REAL*8(A-H,O-Z)
+PRINT*, 'Hello World'
+ 
+END PROGRAM
+```
 
