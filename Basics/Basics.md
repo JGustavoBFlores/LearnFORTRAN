@@ -9,7 +9,7 @@ differences on both formats is minimum but it is important to point it.
 Fixed source reserves the first 6 columns for labels, continuation symbol, 
 etc, while free source format does not have such reservations, you can read 
 more about it [here](https://people.cs.vt.edu/~asandu/Courses/MTU/CS2911/fortran_notes/node4.html)
-with more specific detail. 
+with more detail. 
 
 My work right now asks me to develop fixed source code, but in order to help
 you learn a modern FORTRAN, we will work on writing free source code!
