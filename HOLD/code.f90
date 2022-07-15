@@ -1,0 +1,6 @@
+PROGRAM definingVariables
+A=10
+B=10.0
+I=10.9
+PRINT*,A,B,I
+END PROGRAM
