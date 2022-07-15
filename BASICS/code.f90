@@ -1,6 +1,6 @@
-      PROGRAM BASICS 
-      a=10.0D0
-      i=1
-      print*, a,i
-
-      END PROGRAM
+PROGRAM definingVariables
+A=10
+B=10.0
+I=10.9
+PRINT*,A,B,I
+END PROGRAM
