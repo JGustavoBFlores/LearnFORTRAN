@@ -92,8 +92,7 @@ PRINT*,A,B,I
 END PROGRAM
 ```
 
-What did you find? something like:
-
+What did you find? something like:;
    10.0000000       10.0000000              10
 
 
