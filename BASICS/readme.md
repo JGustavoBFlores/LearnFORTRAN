@@ -28,13 +28,14 @@ PROGRAM mycodesname
 END PROGRAM
 ```
 
-In between this two statements you will write what your code does, let me show you a famous example:
+In between this two statements you will write what your code does, 
+let me show you a famous example:
 
 ```fortran
 PROGRAM helloworld
-IMPLICIT REAL*8(A-H,O-Z)
-PRINT*, 'Hello World'
- 
+PRINT*, 'Hello World' 
 END PROGRAM
 ```
 
+In the first line we have our PROGRAM statement with a name for the program.
+The second line consists of a <ul>PRINT</ul> statement
