@@ -92,7 +92,13 @@ PRINT*,A,B,I
 END PROGRAM
 ```
 
-What did you find? something like:;
+What did you find? something like:
    10.0000000       10.0000000              10
 
-
+Again, play with the code! 
+<ul>
+  <li>Give the real variables an integer value.</li>
+  <li>Give the integer variable a real value.</li>
+  <li>Give a character value to all the variables</li>
+  <li>Make a new variable and give it a value</li>
+</ul>
