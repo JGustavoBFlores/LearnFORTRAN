@@ -21,7 +21,7 @@ So, any FORTRAN code we write must have a name that ends on .f90 like: <i>mycode
 Coding is writing a set of steps for the computer to follows, this steps are called statements.
 
 Once inside our FORTRAN code file, we will refer to this file as source code from now on,
-the first thing we must write is the PROGRAM and the END PROGRAM statements:
+the first thing we must write is the <i>PROGRAM</i> and the <i>END PROGRAM</i> statements:
 
 ```fortran
 PROGRAM mycodesname 
@@ -37,5 +37,16 @@ PRINT*, 'Hello World'
 END PROGRAM
 ```
 
-In the first line we have our PROGRAM statement with a name for the program.
-The second line consists of a <ul>PRINT</ul> statement
+In the first line we have our <i>PROGRAM</i> statement with a name for the program.
+The second line consists of a <i>PRINT</i> statement followed by a message between quotation marks.
+And finally our <i> END PROGRAM </i> statement.
+
+Run this code! Play changing the message, there are many things you can experimentate with:
+<ul>
+  <li>Change the message for a different one.</li>
+  <li>Add a second message.</li>
+  <li>Add another message in the same statement as the original.</li>
+  <li>Add a very long message until the program doesn't compile.</li>
+  <li>Add symbols and numbers to your message.</li>
+</ul>
+
