@@ -15,4 +15,24 @@ My work right now asks me to develop fixed source code, but in order to help
 you learn a modern FORTRAN, we will work on writing free source code!
 
 
-So, any FORTRAN code we write must have a name that ends on .f90 like: <i>mycode.f90<i> 
+So, any FORTRAN code we write must have a name that ends on .f90 like: <i>mycode.f90</i>
+
+<hr>
+Coding is writing a set of steps for the computer to follows, this steps are called statements.
+
+Once inside our FORTRAN code file, we will refer to this file as source code from now on,
+the first thing we must write is the PROGRAM and the END PROGRAM statements:
+
+{% raw %}
+```fo
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+```
+{% endraw %}
+
