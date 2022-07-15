@@ -24,7 +24,7 @@ Once inside our FORTRAN code file, we will refer to this file as source code fro
 the first thing we must write is the PROGRAM and the END PROGRAM statements:
 
 {% raw %}
-```fo
+```html
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
