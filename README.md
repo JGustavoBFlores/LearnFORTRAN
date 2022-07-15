@@ -10,6 +10,7 @@ You do NOT need to know how to code to understand a FORTRAN code, at least
 a basic one, which is what we are gonna aim for.
 
 Before we begin it is important to point some things!
+FORTRAN requires a compiler to run, for which you need to install the so called compiler on your computer OR you can use an online compiler like [ONLINEDGB](https://www.onlinegdb.com/online_fortran_compiler)
 <ul>
     <li>FORTRAN requires a compiler to run, for which you need to install the so called compiler on your computer OR you can use an online compiler like [ONLINEDGB](https://www.onlinegdb.com/online_fortran_compiler)   </li>
     <li>  1</li>
