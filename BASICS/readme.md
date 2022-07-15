@@ -15,4 +15,4 @@ My work right now asks me to develop fixed source code, but in order to help
 you learn a modern FORTRAN, we will work on writing free source code!
 
 
-So, any FORTRAN code we write must have a name that ends on .f90 like: <hr> l.f90</hr> 
+So, any FORTRAN code we write must have a name that ends on .f90 like: <i>l.f90<i> 
