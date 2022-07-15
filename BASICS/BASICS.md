@@ -50,3 +50,16 @@ Run this code! Play changing the message, there are many things you can experime
   <li>Add symbols and numbers to your message.</li>
 </ul>
 
+<hr>
+An important part of any code is commenting it! Comments are notes that programmers add to their codes and have no impact on the program because the compiler ignores them when building the executable, they are useful for many reasons! If you are using an old code, you are most likely to not remember how the code works at 100%, if someone wants to use one of your codes, your comments will help them understand it faster and better. 
+
+To insert a comment on FORTRAN you just have to write a "!" mark and write your comment. Thats it!
+
+```fortran
+PROGRAM helloworld
+PRINT*, 'Hello World' !Here is a comment
+END PROGRAM
+```
+It is important to notice that everything after a "!" is considered a comment, so, be careful where you write your exclamation mark, you don't want the compiler to ignore the actual code!
+
+
