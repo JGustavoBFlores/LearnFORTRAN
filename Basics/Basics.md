@@ -49,6 +49,17 @@ Run this code! Play changing the message, there are many things you can experime
   <li>Add symbols and numbers to your message.</li>
 </ul>
 
+It is important to note that each kind of FORTRAN code has a different maximum size for its statements, because we will be working with FORTRAN90 we will worry that our statements are less than 132 characters long. If you need a longer statement you can add an <i>&</i> symbol in your line and then the next line will become a continuation. On fixed source FORTRAN we would write the <i>&</i> on the sixt column. Lets see an example:
+
+```fortran
+PROGRAM helloWorld
+PRINT*, 'Hello World, I am a '&
+'FORTRAN code.'
+END PROGRAM
+```
+Notice that it is not mandatory for the statement to be anywhere close to 132 characters long, you can use the continuation mark just to make your code more readable if that is all you want.
+Play a little bit with this code, add commas, quotation marks, more messages.
+
 <hr>
 An important part of any code is commenting it! Comments are notes that programmers add to their codes and have no impact on the program because the compiler ignores them when building the executable, they are useful for many reasons! If you are using an old code, you are most likely to not remember how the code works at 100%, if someone wants to use one of your codes, your comments will help them understand it faster and better. 
 
