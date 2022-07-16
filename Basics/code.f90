@@ -1,7 +1,6 @@
-PROGRAM charVariable
-CHARACTER myName*4
-CHARACTER*5 friendName
-myName='Toto'
-friendName='Willy'
-PRINT*,myName,' ',friendName
+PROGRAM complexNumbers
+COMPLEX C,D
+C=(1,2)
+D=(1,-2)
+PRINT*,C,2*D,D*C
 END PROGRAM

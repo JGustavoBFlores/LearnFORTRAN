@@ -178,4 +178,22 @@ PRINT*,myName,friendName
 END PROGRAM
 ```
 
-This <i>*#</i> tells FORTRAN how many characters the variable will hold. 
+This <i>*#</i> tells FORTRAN how many characters the variable will hold. What would happen if we give a larger word than the variable can hold? or shorter? 
+
+Pretty simple, FORTRAN will fill the variable letter by letter, if it runs out of letters then it'll be empty from then on,  
+
+<hr>
+Next we will talk about how to work with complex numbers, the main difference with real numbers is that we must define each part inside a set of parenthesis and separated by a comma. FORTRAN knows how to work with the imaginary part when doing products, exponentializing, etc.
+```fortran
+PROGRAM complexNumbers
+COMPLEX C,D
+C=(1,2)
+D=(1,-2)
+PRINT*,C,2*D,D*C
+END PROGRAM
+```
+Play with this code, multiply a complex number by real and integers, add a real value, add an integer, exponentialize a complex number, experiment with them.
+<hr>
+Our last character type is the logical type, but we will cover this in the next directory, because their use is mostly on IF statements.
+<hr>
+Up to here you shoud be able to do your own codes to do basic math and simple problems, the next directory is names <i>Do's, If's and What Else </i>, we will explore how to work with loops, to make if statements and how to use the <i>go to</i> statement.
