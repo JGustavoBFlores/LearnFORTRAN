@@ -163,4 +163,19 @@ END PROGRAM
 
 You see? we could have defined a new variable but this way we are saving memory and we do not need to remember a new variable!
 
+<hr> 
+So far we have only talked about integer and real variables, but how do we define character variables?
 
+The way to define variables in FORTRAN is by writing a statement that starts with the variable type. In the case of the character variables, we can define them as:
+
+```fortran
+PROGRAM charVariable
+CHARACTER myName*4
+CHARACTER*5 friendName
+myName='Toto'
+friendName='Willy'
+PRINT*,myName,friendName
+END PROGRAM
+```
+
+This <i>*#</i> tells FORTRAN how many characters the variable will hold. 
