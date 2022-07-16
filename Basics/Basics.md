@@ -14,8 +14,7 @@ with more specific detail.
 My work right now asks me to develop fixed source code, but in order to help
 you learn a modern FORTRAN, we will work on writing free source code!
 
-
-So, any FORTRAN code we write must have a name that ends on .f90 like: <i>mycode.f90</i>
+Any free source FORTRAN code we write must have a name that ends on .f90 like: <i>mycode.f90</i>
 
 <hr>
 Coding is writing a set of steps for the computer to follows, this steps are called statements.
@@ -95,3 +94,73 @@ END PROGRAM
 What did you find? something like:
 
    10.0000000       10.0000000              10
+
+Now you should play with this code, do stuff like:
+<ul>
+  <li>Give a real value to the integer variable.</li>
+  <li>Give a fractional value to both types of variables.</li>
+  <li>Do not give a value to a variable (delete any statement that includes an equal).</li>
+</ul>
+
+By doing this little experiments with your code you will have a bterrer understanding of how FORTRAN works!
+
+<hr>
+There are many things we can do on FORTRAN to work with our variables but for now we will care about arithmetical operators:
+
+<ul>
+  <li>Addition.</li>
+  <li>Substraction.</li>
+  <li>Multiplication.</li>
+  <li>Division.</li>
+  <li>Exponentiation.</li>
+  <li>Assignation</li>
+</ul>
+
+All this operations work just as in your math classes, assignation is just the equal sign, we already used but we will go a little bit more into it later on! In any case, you should play around with this operators to see how they interact with each others, 
+
+```fortran
+PROGRAM FORTRANarithmetics
+A=2.0+3.0
+B=2*A
+C=10.0-A
+D=2.0^2.0
+I=10/2
+PRINT*,A,B,C,D,I
+END PROGRAM
+```
+You should play with this code so you have a better understanding of how FORTRAN does arithmetics, you can have more than one operator in one single statement!
+
+<ul>
+  <li>Multiply real values with integers.</li>
+  <li>Divide an integer by a number that does not divides it perfectly.</li>
+  <li>Add and substract numbers of different types</li>
+</ul>
+
+You will notice that results are not always as you'd expect, this is because FORTRAN follows a hierarchy when facing operators, hereis a short introduction about it:
+
+<ul>
+  <li>Exponentials will be done first.</li>
+  <li>Multiplications will be done second.</li>
+  <li>Additions and substractions will be done last.</li>
+  <li>Anything inside a set of parenthesis will be done first, also following this hierarchy.</li>
+  <li>If two operations have the same priority, they will be done from left to right.</li>
+</ul>
+
+[Here](https://web.chem.ox.ac.uk/fortran/arithmetic.html) you can find more about this hierarchy.
+
+<hr>
+
+The equal sign has an interesting way to work on programming. It does not mean that two things are equal but instead it assigns the right side of the equal to the variable on the left, this may sound that it two things are equal but it allows us to do more things! Let's show how it works on an example:
+
+```fortran
+PROGRAM equalSign
+A=10.0
+PRINT*,A
+A=2*A
+PRINT*,A
+END PROGRAM
+```
+
+You see? we could have defined a new variable but this way we are saving memory and we do not need to remember a new variable!
+
+
