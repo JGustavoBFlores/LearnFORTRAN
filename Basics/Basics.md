@@ -207,4 +207,4 @@ Play with this code, multiply a complex number by real and integers, add a real 
 <hr>
 Our last character type is the logical type, but we will cover this in the next directory, because their use is mostly on IF statements.
 <hr>
-Up to here you shoud be able to do your own codes to do basic math and simple problems, the next directory is names <i>Do's, If's and What Else </i>, we will explore how to work with loops, to make if statements and how to use the <i>go to</i> statement.
+Up to here you shoud be able to do your own codes to do basic math and simple problems, the next directory is names <i>Do's, If's and What Else</i>, we will explore how to work with loops, to make if statements and how to use the <i>go to</i> statement.
