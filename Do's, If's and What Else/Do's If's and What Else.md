@@ -1,22 +1,36 @@
-In this first directory we will work the basics of FORTRAN
-
-There are many parts of a FORTRAN code but lets start by the file
-
-A FORTRAN code is contained in a .f type of document. Nowadays FORTRAN 
-is taught using free source FORTRAN, I code using fixed source, the 
-differences on both formats is minimum but it is important to point it.
-
-Fixed source reserves the first 6 columns for labels, continuation symbol, 
-etc, while free source format does not have such reservations, you can read 
-more about it [here](https://people.cs.vt.edu/~asandu/Courses/MTU/CS2911/fortran_notes/node4.html)
-with more specific detail. 
-
-My work right now asks me to develop fixed source code, but in order to help
-you learn a modern FORTRAN, we will work on writing free source code!
-
-Any free source FORTRAN code we write must have a name that ends on .f90 like: <i>mycode.f90</i>
+In this second directory we will work with loops, if statements and logical variables.
 
 <hr>
+Loops
+
+In FORTRAN we have two types of loops, Do Loops and While Loops, both work on different ways and depend on what do you want to do.
+
+<hr>
+Let's start with an example and analize it:
+
+```fortran
+PROGRAM myCodesName 
+a=0.0d0
+DO I=1,10,1
+a=a+1.0d0
+END DO
+END PROGRAM
+```
+
+The first thing to define in a Do loop is a the DO statement, followed by an <i>INTEGER</i> variable, an equal sign, the range we want this variable to loop through, and the size of the steps, I wrote the 1 size step but it is not mandatory, if not writen FORTRAN will consider it is 1.
+
+It is important to notice that the integer variable or counter can not be redefined inside the loop:
+
+```fortran
+PROGRAM myCodesName 
+a=0.0d0
+DO I=1,10,1
+i=i+1
+END DO
+END PROGRAM
+```
+This code would throw an error, try it yourself!
+
 Coding is writing a set of steps for the computer to follows, this steps are called statements.
 
 Once inside our FORTRAN code file, we will refer to this file as source code from now on,
