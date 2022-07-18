@@ -1,8 +1,11 @@
-PROGRAM squareRoot
+PROGRAM FORTRANarithmetics
 IMPLICIT NONE
-REAL X,Y
-PRINT*, "Hello, what number's square root are you interested in?"
-READ*, X
-Y=X**(0.50)
-PRINT*,'The square root of',X, 'is:',Y
+REAL A,B,C,D
+INTEGER I
+A=2.0+3.0
+B=2*A
+C=10.0-A
+D=2.0**(2.0)
+I=10/2
+PRINT*,A,B,C,D,I
 END PROGRAM

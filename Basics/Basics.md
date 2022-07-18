@@ -147,12 +147,12 @@ All this operations work just as in your math classes, assignation is just the e
 ```fortran
 PROGRAM FORTRANarithmetics
 IMPLICIT NONE
-REAL A,B,C,D
+REAL A,B,C,E
 INTEGER I
 A=2.0+3.0
 B=2*A
-C=10.0-A
-D=2.0^2.0
+E=10.0-A
+D=2.0**2.0
 I=10/2
 PRINT*,A,B,C,D,I
 END PROGRAM
