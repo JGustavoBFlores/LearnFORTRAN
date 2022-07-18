@@ -53,6 +53,7 @@ END PROGRAM
 As you can see, the syntaxis is basically the same than in a regular <i>DO</i> loop but in this case you are required to set a condition to be reviewed before going over the statements inside the loop.
 
 Now, if we review the output we would find something like:
+
 ```
            X           Y
            1           1
@@ -60,5 +61,7 @@ Now, if we review the output we would find something like:
            3          14
 ```
 
+Our final <i>Y</i> is bigger than 10, what happens is that before starting this last loop, its value was 5, which is less than 10 so the program goes through the statements one more time, its final value is more than 10 so it exits the loop.
 
 
+<hr>
