@@ -114,7 +114,7 @@ Before getting into doing changes to this code, lets read it through.
 <ul>
   <li>First we write the <i>IMPLICIT NONE</i> statement so we have to define each variable.</li>
   <li>We define two real variables.</li>
-  <li>We define a real\*8 variable, as you can see, the basic difference is that it has more numbers after the dot, you can read a better explanation [here](http://www.math.hawaii.edu/~hile/fortran/fort3.htm) about it.</li>
+  <li>We define a real * 8 variable, as you can see, the basic difference is that it has more numbers after the dot, you can read a better explanation [here](http://www.math.hawaii.edu/~hile/fortran/fort3.htm) about it.</li>
   <li>We define an integer variable.</li>
   <li>We give values to each variable and finally, print them.</li>
 </ul>
@@ -193,6 +193,33 @@ END PROGRAM
 ```
 
 You see? we could have defined a new variable but this way we are saving memory and we do not need to remember a new variable!
+
+<hr>
+Up to here we have been defining variables in the code itself, but, we can make it so we ask the user what values he wants to give to the variables. Let's write a little code that finds the square root of a number.
+
+```fortran
+PROGRAM squareRoot
+IMPLICIT NONE
+REAL X,Y
+PRINT*, "Hello, what number's square root are you interested in?"
+READ*, X
+Y=X**(0.50)
+PRINT*,'The square root of',X, 'is:',Y
+END PROGRAM
+```
+
+The <i>READ*,</i> statement lets FORTRAN know that the user is expected to input a value.
+
+Having a * after a <i>PRINT</i> or <i>READ</i> statement means we are either printing to or reading from screen, we will later work with writing and reading from files.
+
+There are many things that you can do now that you know how to read variables from screen. But you also should play with the code and discover what happens if you input different numbers!
+<ul>
+  <li>Run the squareRoot code and input a character variable.</li>
+  <li>Run the squareRoot code and input two number before pressing enter.</li>
+  <li>Write a code to perform the addition of two numbers. </li>
+</ul>
+
+
 
 <hr> 
 So far we have only talked about integer and real variables, but how do we define character variables?

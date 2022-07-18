@@ -1,11 +1,8 @@
-PROGRAM definingVariables
+PROGRAM squareRoot
 IMPLICIT NONE
-REAL A,B
-REAL*8 C
-INTEGER I
-A=10
-B=10.0
-C=10.0
-I=10
-PRINT*,A,B,C,I
+REAL X,Y
+PRINT*, "Hello, what number's square root are you interested in?"
+READ*, X
+Y=X**(0.50)
+PRINT*,'The square root of',X, 'is:',Y
 END PROGRAM
