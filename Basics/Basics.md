@@ -89,22 +89,37 @@ I believe the names are self explanatory, but in order to give you more document
 
 FORTRAN has an implicit way to work with variables, if the variable name starts with a
 letter between <i>i</i> and <i>n</i>, the variable will be considered an integer variable, in any other case it'll be considered a real variable unless it's defined as another type of variable.
-It is possible to make it so you have to define every single variable, by writing a statement called <i> IMPLICIT NONE</i> right after the <i>PROGRAM</i> statement. As per usual, [here](https://docs.oracle.com/cd/E19957-01/805-4939/6j4m0vn9v/index.html) you can find more documentation on the topic. I prefer to work in the implicit way so I don't have to worry to define every single variable, but you can do as you see more fit!
+It is possible to make it so you have to define every single variable, by writing a statement called <i> IMPLICIT NONE</i> right after the <i>PROGRAM</i> statement. As per usual, [here](https://docs.oracle.com/cd/E19957-01/805-4939/6j4m0vn9v/index.html) you can find more documentation on the topic. I prefer to work in the implicit way so I don't have to worry to define every single variable, but you should start by using the <i>IMPLICIT NONE</i> statement and defining each variable you are gonna use until you get used to it.
 
 Lets define some variables and see what happens when we print them!
 
 ```fortran
 PROGRAM definingVariables
+IMPLICIT NONE
+REAL A,B
+REAL*8 C
+INTEGER I
 A=10
 B=10.0
+C=10.0
 I=10
-PRINT*,A,B,I
+PRINT*,A,B,C,I
 END PROGRAM
 ```
 
 What did you find? something like:
+   10.0000000       10.0000000       10.000000000000000               10
 
-   10.0000000       10.0000000              10
+Before getting into doing changes to this code, lets read it through.
+<ul>
+  <li>First we write the <i>IMPLICIT NONE</i> statement so we have to define each variable.</li>
+  <li>We define two real variables.</li>
+  <li>We define a real\*8 variable, as you can see, the basic difference is that it has more numbers after the dot, you can read a better explanation [here](http://www.math.hawaii.edu/~hile/fortran/fort3.htm) about it.</li>
+  <li>We define an integer variable.</li>
+  <li>We give values to each variable and finally, print them.</li>
+</ul>
+
+Notice how a variable will hold the part of the number it is given, if an integer variable is given a real number it'll only hold the integer part, if a real variable is given an integer, it'll add the dot and the necessary amount of zeros.
 
 Now you should play with this code, do stuff like:
 <ul>
@@ -131,6 +146,9 @@ All this operations work just as in your math classes, assignation is just the e
 
 ```fortran
 PROGRAM FORTRANarithmetics
+IMPLICIT NONE
+REAL A,B,C,D
+INTEGER I
 A=2.0+3.0
 B=2*A
 C=10.0-A
@@ -165,6 +183,8 @@ The equal sign has an interesting way to work on programming. It does not mean t
 
 ```fortran
 PROGRAM equalSign
+IMPLICIT NONE
+REAL A
 A=10.0
 PRINT*,A
 A=2*A
@@ -181,6 +201,7 @@ The way to define variables in FORTRAN is by writing a statement that starts wit
 
 ```fortran
 PROGRAM charVariable
+IMPLICIT NONE
 CHARACTER myName*4
 CHARACTER*5 friendName
 myName='Toto'
@@ -197,6 +218,7 @@ Pretty simple, FORTRAN will fill the variable letter by letter, if it runs out o
 Next we will talk about how to work with complex numbers, the main difference with real numbers is that we must define each part inside a set of parenthesis and separated by a comma. FORTRAN knows how to work with the imaginary part when doing products, exponentializing, etc.
 ```fortran
 PROGRAM complexNumbers
+IMPLICIT NONE
 COMPLEX C,D
 C=(1,2)
 D=(1,-2)

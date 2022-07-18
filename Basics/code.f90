@@ -1,4 +1,11 @@
-PROGRAM helloWorld
-PRINT*, 'Hello World, I am a ', &
-'FORTRAN code.'
+PROGRAM definingVariables
+IMPLICIT NONE
+REAL A,B
+REAL*8 C
+INTEGER I
+A=10
+B=10.0
+C=10.0
+I=10
+PRINT*,A,B,C,I
 END PROGRAM
