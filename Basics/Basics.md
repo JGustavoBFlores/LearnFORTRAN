@@ -243,6 +243,7 @@ Pretty simple, FORTRAN will fill the variable letter by letter, if it runs out o
 
 <hr>
 Next we will talk about how to work with complex numbers, the main difference with real numbers is that we must define each part inside a set of parenthesis and separated by a comma. FORTRAN knows how to work with the imaginary part when doing products, exponentializing, etc.
+
 ```fortran
 PROGRAM complexNumbers
 IMPLICIT NONE
@@ -252,6 +253,7 @@ D=(1,-2)
 PRINT*,C,2*D,D*C
 END PROGRAM
 ```
+
 Play with this code, multiply a complex number by real and integers, add a real value, add an integer, exponentialize a complex number, experiment with them.
 <hr>
 Our last character type is the logical type, but we will cover this in the next directory, because their use is mostly on IF statements.
