@@ -97,11 +97,11 @@ Lets define some variables and see what happens when we print them!
 PROGRAM definingVariables
 IMPLICIT NONE
 REAL A,B
-REAL*8 C
+REAL*8 E
 INTEGER I
 A=10
 B=10.0
-C=10.0
+E=10.0
 I=10
 PRINT*,A,B,C,I
 END PROGRAM
@@ -247,9 +247,9 @@ Next we will talk about how to work with complex numbers, the main difference wi
 ```fortran
 PROGRAM complexNumbers
 IMPLICIT NONE
-COMPLEX C,D
-C=(1,2)
-D=(1,-2)
+COMPLEX D,E
+D=(1,2)
+E=(1,-2)
 PRINT*,C,2*D,D*C
 END PROGRAM
 ```
