@@ -31,6 +31,22 @@ END PROGRAM
 ```
 This code would throw an error, try it yourself!
 
+Now, there is an interesting thing FORTRAN does with loops, consider the following code: 
+
+```fortran
+PROGRAM myCodesName 
+a=0.0d0
+DO I=1,10,1
+a=a+1.0d0
+END DO
+print*,I
+END PROGRAM
+```
+
+Without running this code, what output do you expect? 10? 9? Run it and see what happens!
+
+11 is kind of unexpected isn't it? Well, what happens is that FORTRAN runs through the loops starting with the first value on the <i>DO</i> statement, in this case 1, and adds the third number, in this case also one, when the loop is finished, it then checks if the final value is valid comparing it with the second number, 10 for this code, if it is less or equal it runs the loop again, if its not valid it just exits the loop. To put it in another way, imagine there is a <i>I=I+1</i> statement before the <i>END DO</i> statement, if the final value of the counter is bigger than second number, FORTRAN exits the loop. FORTRAN never cleans the counter, this is way we get an 11 out of this code.
+
 <hr>
 Most of the time we would not know how many times we have to loop over a series of statements to get to our final answer, in those situations we would rather use a <i>WHILE</i> statement, lets see an example:
 
@@ -63,5 +79,8 @@ Now, if we review the output we would find something like:
 
 Our final <i>Y</i> is bigger than 10, what happens is that before starting this last loop, its value was 5, which is less than 10 so the program goes through the statements one more time, its final value is more than 10 so it exits the loop.
 
-
 <hr>
+
+
+
+
