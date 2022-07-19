@@ -10,9 +10,12 @@ Let's start with an example and analize it:
 
 ```fortran
 PROGRAM myCodesName 
-a=0.0d0
+IMPLICIT NONE
+REAL a
+INTEGER I
+a=0.0
 DO I=1,10,1
-a=a+1.0d0
+a=a+1.0
 END DO
 END PROGRAM
 ```
@@ -23,9 +26,12 @@ It is important to notice that the integer variable or counter can not be redefi
 
 ```fortran
 PROGRAM myCodesName 
-a=0.0d0
+IMPLICIT NONE
+REAL a
+INTEGER I
+a=0.0
 DO I=1,10,1
-i=i+1
+I=I+1
 END DO
 END PROGRAM
 ```
@@ -35,11 +41,14 @@ Now, there is an interesting thing FORTRAN does with loops, consider the followi
 
 ```fortran
 PROGRAM myCodesName 
-a=0.0d0
+IMPLICIT NONE
+REAL a
+INTEGER I
+a=0.0
 DO I=1,10,1
-a=a+1.0d0
+a=a+1.0
 END DO
-print*,I
+PRINT*,I
 END PROGRAM
 ```
 
@@ -80,7 +89,3 @@ Now, if we review the output we would find something like:
 Our final <i>Y</i> is bigger than 10, what happens is that before starting this last loop, its value was 5, which is less than 10 so the program goes through the statements one more time, its final value is more than 10 so it exits the loop.
 
 <hr>
-
-
-
-
