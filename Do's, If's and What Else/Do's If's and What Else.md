@@ -59,7 +59,7 @@ Without running this code, what output do you expect? 10? 9? Run it and see what
 <hr>
 Most of the time we would not know how many times we have to loop over a series of statements to get to our final answer, in those situations we would rather use a <i>WHILE</i> statement, lets see an example:
 
-This program's job is to do a sumations of the squares of numbers but whenever the summation is more than 100 it'll stop:
+This program's job is to do a sumations of the squares of numbers but whenever the summation is more than 10 it'll stop:
 
 ```fortran
 PROGRAM whileLoops
@@ -89,3 +89,8 @@ Now, if we review the output we would find something like:
 Our final <i>Y</i> is bigger than 10, what happens is that before starting this last loop, its value was 5, which is less than 10 so the program goes through the statements one more time, its final value is more than 10 so it exits the loop.
 
 <hr>
+
+Now it is time to visit the logical variables, this are very special variables that can only have one of two values: ``` true ```
+
+
+
