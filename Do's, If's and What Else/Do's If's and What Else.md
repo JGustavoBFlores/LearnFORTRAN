@@ -90,7 +90,7 @@ Our final <i>Y</i> is bigger than 10, what happens is that before starting this 
 
 <hr>
 
-Now it is time to visit the logical variables, this are very special variables that can only have one of two values: ``` true ```
+Now it is time to visit the logical variables, this are very special variables that can only have one of two values: <i>TRUE</i> or <i>FALSE</i>
 
 
 
