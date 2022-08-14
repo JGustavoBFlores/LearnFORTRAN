@@ -148,6 +148,7 @@ What happens? well, lets read the code together: We give a name to our program, 
 Do some changes to this code: change the conditions inside the if statements, include more <i>ELSE IF</i> statements, put this conditions inside a DO loop or a DO while, include more statements in between <i>IF</i> statements 
 
 This is how the while code would look with <i>IF</i> statements:
+
 ```fortran
 PROGRAM whileLoops
 IMPLICIT NONE
@@ -165,3 +166,5 @@ IF(Y.GE.10)LOGIC1=.FALSE.
 END DO
 END PROGRAM
 ```
+
+You can find more documentation on [here](https://www.personal.psu.edu/jhm/f90/lectures/10.html).
